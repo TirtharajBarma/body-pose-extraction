@@ -1,0 +1,33 @@
+{
+  "name": "pose-extraction-backend",
+  "version": "1.0.0",
+  "description": "Backend system for pose extraction and automated backup",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node -r dotenv/config server.js",
+    "dev": "nodemon -r dotenv/config server.js"
+  },
+  "keywords": [
+    "pose-extraction",
+    "mediapipe",
+    "backup",
+    "automation"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.0",
+    "pg": "^8.11.3",
+    "multer": "^1.4.5-lts.1",
+    "node-cron": "^3.0.3",
+    "archiver": "^6.0.1",
+    "nodemailer": "^6.9.7",
+    "dotenv": "^16.3.1",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}
